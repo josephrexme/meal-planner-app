@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Meal Planner App</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Frontend Training Meal Planner <br>App</h1>
+    <form>
+      <div>
+        <label>Meal name</label>
+        <input type="text" />
+      </div>
+      <div>
+        <label>Category</label>
+        <select>
+          <option>Breakfast</option>
+          <option>Brunch</option>
+          <option>Lunch</option>
+          <option>Dinner</option>
+        </select>
+      </div>
+      <div>
+        <label>Recipe Link</label>
+        <input type="text" />
+      </div>
+      <div>
+        <label>When will you cook this meal?</label>
+        <input type="date" />
+      </div>
+      <div>
+        <label>Image Link</label>
+        <input type="text" />
+      </div>
+      <button type="submit">Create Plan</button>
+    </form>
+  </header> 
+  <main class="content">
+    <form>
+      <input type="search" placeholder="e.g Basmati Rice" />
+      <button type="submit">Search meal</button>
+    </form>
+    <ul class="items" id="container">
+      <li>
+        <span>Dinner</span>
+        <img src="https://placehold.it/200" />
+        <div>
+          <h3>Food Title</h3>
+          <a href="/">view recipe</a>
+          <h5>Monday - 5th December, 2085</h5>
+        </div>
+      </li>
+      <li>
+        <span>Dinner</span>
+        <img src="https://placehold.it/200" />
+        <div>
+          <h3>Food Title</h3>
+          <a href="/">view recipe</a>
+          <h5>Monday - 5th December, 2085</h5>
+        </div>
+      </li>
+      <li>
+        <span>Dinner</span>
+        <img src="https://placehold.it/200" />
+        <div>
+          <h3>Food Title</h3>
+          <a href="/">view recipe</a>
+          <h5>Monday - 5th December, 2085</h5>
+        </div>
+      </li>
+    </ul>
+  </main>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
