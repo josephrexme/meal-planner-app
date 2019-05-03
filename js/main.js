@@ -1,4 +1,5 @@
 (function (){
+  // Make a short jquery-like variable ($) to get Ids in less code
   const $ = document.getElementById.bind(document);
   const container = $('container');
   const createForm = $('createForm');
