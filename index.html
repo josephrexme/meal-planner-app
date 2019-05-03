@@ -10,14 +10,14 @@
 <body>
   <header class="header">
     <h1>Frontend Training Meal Planner <br>App</h1>
-    <form>
+    <form id="createForm">
       <div>
         <label>Meal name</label>
-        <input type="text" />
+        <input type="text" id="name" />
       </div>
       <div>
         <label>Category</label>
-        <select>
+        <select id="category">
           <option>Breakfast</option>
           <option>Brunch</option>
           <option>Lunch</option>
@@ -26,43 +26,26 @@
       </div>
       <div>
         <label>Recipe Link</label>
-        <input type="text" />
+        <input type="text" id="recipe" />
       </div>
       <div>
         <label>When will you cook this meal?</label>
-        <input type="date" />
+        <input type="date" id="cookdate" />
       </div>
       <div>
         <label>Image Link</label>
-        <input type="text" />
+        <input type="text" id="image" />
       </div>
       <button type="submit">Create Plan</button>
     </form>
   </header> 
   <main class="content">
-    <form>
-      <input type="search" placeholder="e.g Basmati Rice" />
+    <form id="searchForm">
+      <input type="search" placeholder="e.g Basmati Rice" id="searchInput" />
       <button type="submit">Search meal</button>
+      <button type="button" id="clearBtn">Clear search</button>
     </form>
     <ul class="items" id="container">
-      <li>
-        <span>Dinner</span>
-        <img src="https://placehold.it/200" />
-        <div>
-          <h3>Food Title</h3>
-          <a href="/">view recipe</a>
-          <h5>Monday - 5th December, 2085</h5>
-        </div>
-      </li>
-      <li>
-        <span>Dinner</span>
-        <img src="https://placehold.it/200" />
-        <div>
-          <h3>Food Title</h3>
-          <a href="/">view recipe</a>
-          <h5>Monday - 5th December, 2085</h5>
-        </div>
-      </li>
       <li>
         <span>Dinner</span>
         <img src="https://placehold.it/200" />
